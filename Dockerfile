@@ -16,5 +16,5 @@ RUN         ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key
 
 RUN         echo 'root:qwerty' |chpasswd
 
-CMD         ["/usr/sbin/sshd", "-4" , "-D"]
+CMD         ["/usr/sbin/sshd", "-4", "-D", "-e"]
 EXPOSE      22
